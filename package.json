@@ -28,7 +28,7 @@
     "!claude-plugin/**/*.test.js"
   ],
   "scripts": {
-    "build": "cargo build --release --no-default-features && node scripts/copy-binary.js",
+    "build": "node init && cargo build --release --no-default-features && node scripts/copy-binary.js",
     "prepare": "node scripts/setup-git-hooks.js"
   },
   "engines": {

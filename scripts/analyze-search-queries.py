@@ -10,6 +10,11 @@ queries are rare, FTS-only is already the right path and Claude's CLI preference
 reflects a correct cost/benefit judgement.
 """
 
+import utils.net
+import utils.clients
+import utils.http_session
+import utils.transport
+import utils.session
 import json, re, shlex, sys
 from collections import Counter
 from pathlib import Path
